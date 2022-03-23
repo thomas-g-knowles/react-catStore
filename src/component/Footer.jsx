@@ -9,7 +9,7 @@ const Footer = () => {
         <li>Thomas Knowles</li>
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
