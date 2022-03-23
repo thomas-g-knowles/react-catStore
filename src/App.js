@@ -4,11 +4,9 @@ import Footer from "./component/Footer";
 import Header from "./component/Header";
 import CatTile from "./component/CatTile";
 import React from "react";
-import { useState, useEffect } from "react";
 
 const App = () => {
   //STATES
-  const [catData, setCatDate] = useState([""]);
 
   return (
     <div className="App">
