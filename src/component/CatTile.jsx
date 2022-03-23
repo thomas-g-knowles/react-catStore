@@ -23,7 +23,7 @@ const CatTile = () => {
   }, []);
 
   return (
-    <div>
+    <div className="tiles">
       {catImage.map((item, index) => (
         <div>
           <img key={index} src={item.url} alt="image of cat" />

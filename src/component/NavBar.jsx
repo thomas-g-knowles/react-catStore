@@ -1,8 +1,10 @@
+import navbarImage from "../images/catlogo.png"
+
 const Navbar = () => {
   return (
     <div>
       <button>Basket</button>
-      <img src="src\images\catlogo.png" alt="Cat Logo" />
+      <img src={navbarImage} alt="Cat Logo" />
     </div>
   );
 };

@@ -1,4 +1,92 @@
+body {
+  margin: 0;
+}
+
 img {
-  height: 40px;
-  width: 40px;
+  width: 5pc;
+  height: 5pc
+}
+
+.navbar div{
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-around;
+  white-space: nowrap;
+}
+
+.navbar div * {
+  margin-top: 1pc;
+  margin-bottom: 1pc;
+}
+
+.navbar div button {
+  align-self: center;
+  font-size: 2pc;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(87, 87, 87);
+  border-radius: 8px;
+  cursor: pointer;
+  color: whitesmoke;
+  background-color: rgb(129, 129, 129);
+  transition: 0.2s ease-in;
+}
+
+.navbar div button:hover {
+  background-color: rgba(129, 129, 129, 0.7);
+  transition: 0.2s ease-in-out;
+}
+
+.navbar div img {
+  height: 6pc;
+  width: 6pc;
+}
+
+.Header {
+  margin: 0.8pc;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tiles {
+  display: flex;
+  flex-wrap: wrap
+}
+
+footer {
+  margin-top: 20px;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer * {
+  margin: 5px;
+}
+
+footer h2 {
+  text-decoration: underline;
+}
+
+footer .descript {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  text-align: center;
+}
+
+footer .madeBy {
+  font-family: monospace;
+  color: rgb(255, 208, 0);
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+footer .madeBy ul {
+  list-style: square;
 }
