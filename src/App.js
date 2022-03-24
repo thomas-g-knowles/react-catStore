@@ -3,7 +3,8 @@ import Navbar from "./component/NavBar";
 import Footer from "./component/Footer";
 import Header from "./component/Header";
 import CatTile from "./component/CatTile";
-import React from "react";
+import React, { useState } from "react";
+import Basket from "./component/Basket";
 
 const App = () => {
   //STATES
@@ -20,6 +21,8 @@ const App = () => {
       <CatTile />
       {/* FOOTER */}
       <Footer />
+      {/* BASKET */}
+      {/* <Basket className="basket"/> */}
     </div>
   );
 };

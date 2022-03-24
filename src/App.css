@@ -90,3 +90,7 @@ footer .madeBy {
 footer .madeBy ul {
   list-style: square;
 }
+
+.basket {
+  background-color: red;
+}
