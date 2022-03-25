@@ -1,9 +1,12 @@
 import navbarImage from "../images/catlogo.png"
 
-const Navbar = () => {
+const Navbar = ( {toggleBasket}, {show} ) => {
+
+  const textChange = show ? "Basket" : "Close Basket"
+
   return (
     <div>
-      <button>Basket</button>
+      <button onClick = {toggleBasket}>{textChange}</button>
       <img src={navbarImage} alt="Cat Logo" />
     </div>
   );
