@@ -44,8 +44,19 @@ const App = () => {
 
   const addBasket = (item) => {
     let storedBasket = [...basket]
+    let inBasket = false
+
+    storedBasket.map((cat) => {
+      if (cat == item) {
+        alert("Cannot add; cat already in basket")
+        inBasket = true
+        return
+      }})
+
+    if (!inBasket) {
     storedBasket.push(item)
     setBasket(storedBasket)
+    }
   }
 
   const removeItem = (item) => {
