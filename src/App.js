@@ -46,22 +46,12 @@ const App = () => {
     let storedBasket = [...basket]
     storedBasket.push(item)
     setBasket(storedBasket)
-    calcSum()
   }
 
   const removeItem = (item) => {
     let storedBasket = [...basket]
     storedBasket.splice(item, 1)
     setBasket(storedBasket)
-    calcSum()
-  }
-
-  const calcSum = () => {
-    let total = 0
-    basket.map((item) => (
-      total += item.price.parseFloat()
-    ))
-    setSum(total)
   }
 
   const toggleBasket = () => {
@@ -72,6 +62,17 @@ const App = () => {
     fetchCat();
   }, []);
 
+  useEffect(() => {
+    const calcSum = () => {
+      let total = 0
+      basket.map((item) => {
+        total += parseFloat(item.price)
+    })
+      setSum(total)
+    }
+    calcSum()
+  })
+
   return (
     <div className="App">
       {/* NAVBAR */}
@@ -79,14 +80,13 @@ const App = () => {
         <Navbar show = {show} toggleBasket = {toggleBasket}/>
       </nav>
       {/* BASKET */}
-      <Basket show = {show} basket = {basket} setter = {setBasket} removeItem = {removeItem} sum = {sum} calcSum = {calcSum}/>
+      <Basket show = {show} basket = {basket} removeItem = {removeItem} sum = {sum}/>
       {/* HEADER */}
       <Header />
       {/* CAT TILE  */}
-      <CatTile catData = {catData} addBasket = {addBasket}/>
+      {error ? <p>Error</p> : <CatTile catData = {catData} addBasket = {addBasket}/>}
       {/* FOOTER */}
       <Footer />
-      
     </div>
   );
 };
