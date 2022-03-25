@@ -1,15 +1,21 @@
 // import CatTile from "./CatTile";
 
-// // const Basket = (props) => {
-// //   return (
-// //     <div className="basket">
-// //       {props.basket.map((item) => {
-// //         <div>
-// //           <h6>{item.name}</h6>
-// //         </div>
-// //       })}
-// //   </div>
-// //   );
-// // };
+const Basket = (props) => {
 
-// export default Basket;
+    if(!props.show){return null}
+
+    return (
+<div>
+    {props.basket.map((item) => (
+    <div>
+      <h3>{item.name}</h3>
+      <h3>{item.cat}</h3>
+      <h3>{item.country}</h3>
+      <h3>{item.price}</h3>
+    </div>
+    ))}
+</div>
+  );
+};
+
+export default Basket;
