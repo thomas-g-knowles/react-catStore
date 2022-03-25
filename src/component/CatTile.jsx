@@ -1,12 +1,6 @@
 import React from "react";
 
 const CatTile = ({ catData, addBasket }) => {
-  
-  // const counter = 0;
-
-  // addCounter = () => {
-  //   counter +1
-  // }
 
   return (
     <div>

@@ -1,7 +1,7 @@
 import navbarImage from "../images/CatLogo.webp";
 import { FaShoppingCart } from "react-icons/fa";
 
-const Navbar = ({ toggleBasket }, { show }) => {
+const Navbar = ({ toggleBasket }) => {
 
   return (
     <div className="Basket">
