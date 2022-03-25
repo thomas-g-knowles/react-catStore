@@ -85,17 +85,21 @@ const App = () => {
   })
 
   return (
-    <div className="App">
+    <div className="App-container">
       {/* NAVBAR */}
       <nav className="navbar">
         <Navbar show = {show} toggleBasket = {toggleBasket}/>
       </nav>
       {/* BASKET */}
       <Basket show = {show} basket = {basket} removeItem = {removeItem} sum = {sum}/>
+      <div className = "shopping">
+        <div className = "shopping2">
       {/* HEADER */}
       <Header />
       {/* CAT TILE  */}
       {error ? <p>Error</p> : <CatTile catData = {catData} addBasket = {addBasket}/>}
+        </div>
+      </div>
       {/* FOOTER */}
       <Footer />
     </div>

@@ -1,13 +1,25 @@
-import navbarImage from "../images/catlogo.png"
+import navbarImage from "../images/CatLogo.webp";
+import { FaShoppingCart } from "react-icons/fa";
 
-const Navbar = ( {toggleBasket}, {show} ) => {
-
-  const textChange = show ? "Close Basket" : "Basket"
+const Navbar = ({ toggleBasket }, { show }) => {
 
   return (
-    <div>
-      <button onClick = {toggleBasket}>{textChange}</button>
+    <div className="Basket">
       <img src={navbarImage} alt="Cat Logo" />
+      <div className="Home">
+        <a>Home</a>
+      </div>
+      <div className="Contact">
+        <a>Contact</a>
+      </div>
+      <div className="About">
+        <a>About</a>
+      </div>
+      <div className="BasketBtn">
+        <button onClick={toggleBasket}>
+          <FaShoppingCart />
+        </button>
+      </div>
     </div>
   );
 };
