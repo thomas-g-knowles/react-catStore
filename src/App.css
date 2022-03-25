@@ -94,3 +94,11 @@ footer .madeBy ul {
 .basket {
   background-color: red;
 }
+
+.basketModel{
+  width: 300px;
+  height: 600px;
+  border: solid 2px grey;
+  overflow-y: scroll;
+  background-color: aqua;
+}

@@ -2,7 +2,7 @@ import navbarImage from "../images/catlogo.png"
 
 const Navbar = ( {toggleBasket}, {show} ) => {
 
-  const textChange = show ? "Basket" : "Close Basket"
+  const textChange = show ? "Close Basket" : "Basket"
 
   return (
     <div>
