@@ -12,13 +12,13 @@ const CatTile = ({ catData, addBasket }) => {
     <div>
       <div className="tiles">
         {catData.map((item, index) => (
-          <div>
-            <img key={index} src={item.url} alt="image of cat" />
-            <p>{item.name}</p>
-            <p>{item.cat}</p>
-            <p>{item.country}</p>
-            <p>{item.price}</p>
-            <button onClick={() => {addBasket(item)}}> Add to Basket</button>
+          <div className = "catTile">
+            <img className = "catImage" key={index} src={item.url} alt="image of cat" />
+            <p className = "catName">{item.name}</p>
+            <p className = "catBreed">{item.cat}</p>
+            <p className = "catCountry">{item.country}</p>
+            <p className = "catPrice">{item.price}</p>
+            <button className = "button-13" onClick={() => {addBasket(item)}}> Add to Basket</button>
           </div>
         ))}
       </div>
