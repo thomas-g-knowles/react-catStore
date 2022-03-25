@@ -5,7 +5,7 @@ const Basket = (props) => {
     if(!props.show){return null}
 
     return (
-<div>
+<div className = "basketModel">
     {props.basket.map((item) => (
     <div>
       <h3>{item.name}</h3>
