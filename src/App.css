@@ -211,6 +211,10 @@ footer ul {
   border: solid 2px grey;
   overflow-y: scroll;
   background-color: #fae3c6;
+  z-index: 100;
+  position: absolute;
+  top: 50px;
+  /* float: right; */
 }
 
 /* CSS */
